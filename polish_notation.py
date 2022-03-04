@@ -30,7 +30,7 @@ teste = [
 
     "1 + 2 + 3 + 4 + 5",
 ]
-prop = teste[3]
+prop = teste[7]
 
 contor = 3
 
