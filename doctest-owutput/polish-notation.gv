@@ -1,51 +1,37 @@
 // Polish Notation
 digraph {
-	text_3 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> b * ( - - - c )> shape=plaintext]
-	text_4 [label=<<FONT COLOR="BLUE"> The importance of * is 2 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 101 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 101 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 101 </FONT> <BR/>> shape=plaintext]
-	1 [label=< <FONT COLOR="RED"> 1) </FONT> *  >]
-	text_5 [label="The least significant operator is * 
+	text_3 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ ¬ ¬ B> shape=plaintext]
+	text_4 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
+	1 [label=< <FONT COLOR="RED"> 1) </FONT> ¬  >]
+	text_5 [label="The least significant operator is ¬ 
  
- => We create node 1) *" shape=plaintext]
-	text_6 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> b> shape=plaintext]
-	text_7 [label=<> shape=plaintext]
-	text_8 [label="The variable is b" shape=plaintext]
-	text_9 [label="We connect 1) *  with  2) b" shape=plaintext]
-	2 [label=< <FONT COLOR="RED"> 2) </FONT> b>]
-	text_10 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ( - - - c )> shape=plaintext]
-	text_11 [label=<<FONT COLOR="BLUE"> The importance of - is 101 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 101 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 101 </FONT> <BR/>> shape=plaintext]
-	3 [label=< <FONT COLOR="RED"> 3) </FONT> -  >]
-	text_12 [label="The least significant operator is - 
+ => We create node 1) ¬" shape=plaintext]
+	text_6 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ ¬ B> shape=plaintext]
+	text_7 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
+	2 [label=< <FONT COLOR="RED"> 2) </FONT> ¬  >]
+	text_8 [label="The least significant operator is ¬ 
  
- => We create node 3) -" shape=plaintext]
-	text_13 [label="We connect 1) *  with  3) -" shape=plaintext]
-	text_14 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> - - c )> shape=plaintext]
-	text_15 [label=<<FONT COLOR="BLUE"> The importance of - is 1 </FONT> <BR/><FONT COLOR="BLACK"> The importance of - is 1 </FONT> <BR/>> shape=plaintext]
-	4 [label=< <FONT COLOR="RED"> 4) </FONT> -  >]
-	text_16 [label="The least significant operator is - 
+ => We create node 2) ¬" shape=plaintext]
+	text_9 [label="We connect 1) ¬  with  2) ¬" shape=plaintext]
+	text_10 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ B> shape=plaintext]
+	text_11 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
+	3 [label=< <FONT COLOR="RED"> 3) </FONT> ¬  >]
+	text_12 [label="The least significant operator is ¬ 
  
- => We create node 4) -" shape=plaintext]
-	text_17 [label="We connect 3) -  with  4) -" shape=plaintext]
-	text_18 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> - c )> shape=plaintext]
-	text_19 [label=<<FONT COLOR="BLUE"> The importance of - is 1 </FONT> <BR/>> shape=plaintext]
-	5 [label=< <FONT COLOR="RED"> 5) </FONT> -  >]
-	text_20 [label="The least significant operator is - 
- 
- => We create node 5) -" shape=plaintext]
-	text_21 [label="We connect 4) -  with  5) -" shape=plaintext]
-	text_22 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> c )> shape=plaintext]
-	text_23 [label=<> shape=plaintext]
-	text_24 [label="The variable is c" shape=plaintext]
-	text_25 [label="We connect 5) -  with  6) c" shape=plaintext]
-	6 [label=< <FONT COLOR="RED"> 6) </FONT> c>]
+ => We create node 3) ¬" shape=plaintext]
+	text_13 [label="We connect 2) ¬  with  3) ¬" shape=plaintext]
+	text_14 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> B> shape=plaintext]
+	text_15 [label=<> shape=plaintext]
+	text_16 [label="The variable is B" shape=plaintext]
+	text_17 [label="We connect 3) ¬  with  4) B" shape=plaintext]
+	4 [label=< <FONT COLOR="RED"> 4) </FONT> B>]
 	1 -> 2
-	1 -> 3
+	2 -> 3
 	3 -> 4
-	4 -> 5
-	5 -> 6
-	text_1 [label=<<FONT COLOR="RED" SIZE="100"> Starting proposition is: </FONT>  <BR/> <BR/> b * ( - - - c )> shape=plaintext]
+	text_1 [label=<<FONT COLOR="RED" SIZE="100"> Starting proposition is: </FONT>  <BR/> <BR/> ¬ ¬ ¬ B> shape=plaintext]
 	text_2 [label=<<FONT COLOR="RED" SIZE="100"> Rules are as follows: </FONT>  <BR/> <BR/> 1) I calculate the importance of each operator, and at each step I choose the one with the least importance  <BR/> <BR/> 2) Then I split my propositon to the left of the operator, and to the right of the operator  <BR/> <BR/> 3) I repeat step 1, 2 until my current proposition is empty <BR/> <BR/> 4) When connecting nodes, I always connect them first as left child, then as right child <BR/> <BR/> 5) When opening a paranthesis I increase the importance with 100 > shape=plaintext]
-	text_26 [label=<<FONT COLOR="RED" SIZE="100"> Polish notation is: <BR/> <BR/> <BR/> </FONT> *b---c <BR/> > shape=plaintext]
-	text_27 [label=<<FONT COLOR="RED" SIZE="100"> Tree representation is: </FONT>  <BR/> <BR/> > shape=plaintext]
+	text_18 [label=<<FONT COLOR="RED" SIZE="100"> Polish notation is: <BR/> <BR/> <BR/> </FONT> ¬¬¬B <BR/> > shape=plaintext]
+	text_19 [label=<<FONT COLOR="RED" SIZE="100"> Tree representation is: </FONT>  <BR/> <BR/> > shape=plaintext]
 	text_1 -> text_2 [label="" color=white]
 	text_2 -> text_3 [label="" color=white]
 	text_3 -> text_4 [label="" color=white]
@@ -64,13 +50,5 @@ digraph {
 	text_16 -> text_17 [label="" color=white]
 	text_17 -> text_18 [label="" color=white]
 	text_18 -> text_19 [label="" color=white]
-	text_19 -> text_20 [label="" color=white]
-	text_20 -> text_21 [label="" color=white]
-	text_21 -> text_22 [label="" color=white]
-	text_22 -> text_23 [label="" color=white]
-	text_23 -> text_24 [label="" color=white]
-	text_24 -> text_25 [label="" color=white]
-	text_25 -> text_26 [label="" color=white]
-	text_26 -> text_27 [label="" color=white]
-	text_27 -> 1 [label="" color=white]
+	text_19 -> 1 [label="" color=white]
 }

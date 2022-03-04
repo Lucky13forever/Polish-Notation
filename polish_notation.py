@@ -29,8 +29,10 @@ teste = [
     "( 1 + 2 ) * 3 + 4",
 
     "1 + 2 + 3 + 4 + 5",
+
+    "¬ ¬ ¬ B"
 ]
-prop = teste[-4]
+prop = teste[-1]
 
 contor = 3
 
@@ -188,7 +190,7 @@ def calculare_imp_simbol(prop: list, direction: str, father: str):
             show_importance.append( f'<FONT COLOR="BLACK"> The importance of {x} is {importance} </FONT> <BR/>')
             # NOTE u changed here
             if minim >= importance:
-                if x == imp_x and x == '-':
+                if x == imp_x and x in "-¬":
                     continue
 
                 minim = importance
