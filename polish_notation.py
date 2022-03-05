@@ -34,7 +34,7 @@ teste = [
 
     "a ^ b * c"
 ]
-prop = teste[-5]
+prop = teste[-1]
 
 contor = 3
 
