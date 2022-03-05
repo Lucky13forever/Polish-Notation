@@ -1,37 +1,85 @@
 // Polish Notation
 digraph {
-	text_3 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ ¬ ¬ B> shape=plaintext]
-	text_4 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
-	1 [label=< <FONT COLOR="RED"> 1) </FONT> ¬  >]
-	text_5 [label="The least significant operator is ¬ 
+	text_3 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ A ^ ( B \/ C ) \/ D ^ ¬ E> shape=plaintext]
+	text_4 [label=<<FONT COLOR="BLACK"> The importance of ¬ is 4 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ^ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of \/ is 102 </FONT> <BR/><FONT COLOR="BLUE"> The importance of \/ is 2 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ^ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 4 </FONT> <BR/>> shape=plaintext]
+	1 [label=< <FONT COLOR="RED"> 1) </FONT> \/  >]
+	text_5 [label="The least significant operator is \/ 
  
- => We create node 1) ¬" shape=plaintext]
-	text_6 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ ¬ B> shape=plaintext]
-	text_7 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
-	2 [label=< <FONT COLOR="RED"> 2) </FONT> ¬  >]
-	text_8 [label="The least significant operator is ¬ 
+ => We create node 1) \/" shape=plaintext]
+	text_6 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ A ^ ( B \/ C )> shape=plaintext]
+	text_7 [label=<<FONT COLOR="BLACK"> The importance of ¬ is 4 </FONT> <BR/><FONT COLOR="BLUE"> The importance of ^ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of \/ is 102 </FONT> <BR/>> shape=plaintext]
+	2 [label=< <FONT COLOR="RED"> 2) </FONT> ^  >]
+	text_8 [label="The least significant operator is ^ 
  
- => We create node 2) ¬" shape=plaintext]
-	text_9 [label="We connect 1) ¬  with  2) ¬" shape=plaintext]
-	text_10 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ B> shape=plaintext]
-	text_11 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 3 </FONT> <BR/>> shape=plaintext]
+ => We create node 2) ^" shape=plaintext]
+	text_9 [label="We connect 1) \/  with  2) ^" shape=plaintext]
+	text_10 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ A> shape=plaintext]
+	text_11 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 4 </FONT> <BR/>> shape=plaintext]
 	3 [label=< <FONT COLOR="RED"> 3) </FONT> ¬  >]
 	text_12 [label="The least significant operator is ¬ 
  
  => We create node 3) ¬" shape=plaintext]
-	text_13 [label="We connect 2) ¬  with  3) ¬" shape=plaintext]
-	text_14 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> B> shape=plaintext]
+	text_13 [label="We connect 2) ^  with  3) ¬" shape=plaintext]
+	text_14 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> A> shape=plaintext]
 	text_15 [label=<> shape=plaintext]
-	text_16 [label="The variable is B" shape=plaintext]
-	text_17 [label="We connect 3) ¬  with  4) B" shape=plaintext]
-	4 [label=< <FONT COLOR="RED"> 4) </FONT> B>]
+	text_16 [label="The variable is A" shape=plaintext]
+	text_17 [label="We connect 3) ¬  with  4) A" shape=plaintext]
+	4 [label=< <FONT COLOR="RED"> 4) </FONT> A>]
+	text_18 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ( B \/ C )> shape=plaintext]
+	text_19 [label=<<FONT COLOR="BLUE"> The importance of \/ is 102 </FONT> <BR/>> shape=plaintext]
+	5 [label=< <FONT COLOR="RED"> 5) </FONT> \/  >]
+	text_20 [label="The least significant operator is \/ 
+ 
+ => We create node 5) \/" shape=plaintext]
+	text_21 [label="We connect 2) ^  with  5) \/" shape=plaintext]
+	text_22 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ( B> shape=plaintext]
+	text_23 [label=<> shape=plaintext]
+	text_24 [label="The variable is B" shape=plaintext]
+	text_25 [label="We connect 5) \/  with  6) B" shape=plaintext]
+	6 [label=< <FONT COLOR="RED"> 6) </FONT> B>]
+	text_26 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> C )> shape=plaintext]
+	text_27 [label=<> shape=plaintext]
+	text_28 [label="The variable is C" shape=plaintext]
+	text_29 [label="We connect 5) \/  with  7) C" shape=plaintext]
+	7 [label=< <FONT COLOR="RED"> 7) </FONT> C>]
+	text_30 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> D ^ ¬ E> shape=plaintext]
+	text_31 [label=<<FONT COLOR="BLUE"> The importance of ^ is 3 </FONT> <BR/><FONT COLOR="BLACK"> The importance of ¬ is 4 </FONT> <BR/>> shape=plaintext]
+	8 [label=< <FONT COLOR="RED"> 8) </FONT> ^  >]
+	text_32 [label="The least significant operator is ^ 
+ 
+ => We create node 8) ^" shape=plaintext]
+	text_33 [label="We connect 1) \/  with  8) ^" shape=plaintext]
+	text_34 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> D> shape=plaintext]
+	text_35 [label=<> shape=plaintext]
+	text_36 [label="The variable is D" shape=plaintext]
+	text_37 [label="We connect 8) ^  with  9) D" shape=plaintext]
+	9 [label=< <FONT COLOR="RED"> 9) </FONT> D>]
+	text_38 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> ¬ E> shape=plaintext]
+	text_39 [label=<<FONT COLOR="BLUE"> The importance of ¬ is 4 </FONT> <BR/>> shape=plaintext]
+	10 [label=< <FONT COLOR="RED"> 10) </FONT> ¬  >]
+	text_40 [label="The least significant operator is ¬ 
+ 
+ => We create node 10) ¬" shape=plaintext]
+	text_41 [label="We connect 8) ^  with  10) ¬" shape=plaintext]
+	text_42 [label=<<FONT COLOR="RED" SIZE="100"> Current proposition is: </FONT>  <BR/> <BR/> E> shape=plaintext]
+	text_43 [label=<> shape=plaintext]
+	text_44 [label="The variable is E" shape=plaintext]
+	text_45 [label="We connect 10) ¬  with  11) E" shape=plaintext]
+	11 [label=< <FONT COLOR="RED"> 11) </FONT> E>]
 	1 -> 2
+	1 -> 8
 	2 -> 3
+	2 -> 5
+	8 -> 9
+	8 -> 10
 	3 -> 4
-	text_1 [label=<<FONT COLOR="RED" SIZE="100"> Starting proposition is: </FONT>  <BR/> <BR/> ¬ ¬ ¬ B> shape=plaintext]
+	5 -> 6
+	5 -> 7
+	10 -> 11
+	text_1 [label=<<FONT COLOR="RED" SIZE="100"> Starting proposition is: </FONT>  <BR/> <BR/> ¬ A ^ ( B \/ C ) \/ D ^ ¬ E> shape=plaintext]
 	text_2 [label=<<FONT COLOR="RED" SIZE="100"> Rules are as follows: </FONT>  <BR/> <BR/> 1) I calculate the importance of each operator, and at each step I choose the one with the least importance  <BR/> <BR/> 2) Then I split my propositon to the left of the operator, and to the right of the operator  <BR/> <BR/> 3) I repeat step 1, 2 until my current proposition is empty <BR/> <BR/> 4) When connecting nodes, I always connect them first as left child, then as right child <BR/> <BR/> 5) When opening a paranthesis I increase the importance with 100 > shape=plaintext]
-	text_18 [label=<<FONT COLOR="RED" SIZE="100"> Polish notation is: <BR/> <BR/> <BR/> </FONT> ¬¬¬B <BR/> > shape=plaintext]
-	text_19 [label=<<FONT COLOR="RED" SIZE="100"> Tree representation is: </FONT>  <BR/> <BR/> > shape=plaintext]
+	text_46 [label=<<FONT COLOR="RED" SIZE="100"> Polish notation is: <BR/> <BR/> <BR/> </FONT> \/^¬A\/BC^D¬E <BR/> > shape=plaintext]
+	text_47 [label=<<FONT COLOR="RED" SIZE="100"> Tree representation is: </FONT>  <BR/> <BR/> > shape=plaintext]
 	text_1 -> text_2 [label="" color=white]
 	text_2 -> text_3 [label="" color=white]
 	text_3 -> text_4 [label="" color=white]
@@ -50,5 +98,33 @@ digraph {
 	text_16 -> text_17 [label="" color=white]
 	text_17 -> text_18 [label="" color=white]
 	text_18 -> text_19 [label="" color=white]
-	text_19 -> 1 [label="" color=white]
+	text_19 -> text_20 [label="" color=white]
+	text_20 -> text_21 [label="" color=white]
+	text_21 -> text_22 [label="" color=white]
+	text_22 -> text_23 [label="" color=white]
+	text_23 -> text_24 [label="" color=white]
+	text_24 -> text_25 [label="" color=white]
+	text_25 -> text_26 [label="" color=white]
+	text_26 -> text_27 [label="" color=white]
+	text_27 -> text_28 [label="" color=white]
+	text_28 -> text_29 [label="" color=white]
+	text_29 -> text_30 [label="" color=white]
+	text_30 -> text_31 [label="" color=white]
+	text_31 -> text_32 [label="" color=white]
+	text_32 -> text_33 [label="" color=white]
+	text_33 -> text_34 [label="" color=white]
+	text_34 -> text_35 [label="" color=white]
+	text_35 -> text_36 [label="" color=white]
+	text_36 -> text_37 [label="" color=white]
+	text_37 -> text_38 [label="" color=white]
+	text_38 -> text_39 [label="" color=white]
+	text_39 -> text_40 [label="" color=white]
+	text_40 -> text_41 [label="" color=white]
+	text_41 -> text_42 [label="" color=white]
+	text_42 -> text_43 [label="" color=white]
+	text_43 -> text_44 [label="" color=white]
+	text_44 -> text_45 [label="" color=white]
+	text_45 -> text_46 [label="" color=white]
+	text_46 -> text_47 [label="" color=white]
+	text_47 -> 1 [label="" color=white]
 }
